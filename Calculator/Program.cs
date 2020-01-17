@@ -70,9 +70,14 @@ namespace Calculator
             return num1 * num2;
         }
 
-        public static int Divide(int num1, int num2)
+        public static double Divide(double numerator, double divisor)
         {
-            return num1 / num2;
+            if (divisor == 0)
+            {
+                Console.WriteLine("You cannot divide by zero.");
+                return 0;
+            }
+            return numerator / divisor;
         }
     }
     
